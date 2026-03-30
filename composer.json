@@ -1,0 +1,14 @@
+{
+  "name": "ben-balke/jojo-suitecrm",
+  "description": "SuiteCRM integration for Jojo Render",
+  "type": "library",
+  "autoload": {
+    "psr-4": {
+      "JojoSuiteCRM\\": "src/"
+    }
+  },
+  "require": {
+    "php": "^8.2",
+    "ben-balke/jojo-render": "*"
+  }
+}

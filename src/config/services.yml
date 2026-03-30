@@ -1,0 +1,9 @@
+services:
+  JojoRender\:
+    resource: '../vendor/balke/jojo-render/src/*'
+
+  JojoSuiteCRM\:
+    resource: '../vendor/balke/jojo-suitecrm/src/*'
+    autowire: true
+    autoconfigure: true
+    public: false
