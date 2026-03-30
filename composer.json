@@ -1,14 +1,21 @@
 {
-  "name": "ben-balke/jojo-suitecrm",
-  "description": "SuiteCRM integration for Jojo Render",
-  "type": "library",
-  "autoload": {
-    "psr-4": {
-      "JojoSuiteCRM\\": "src/"
+    "name": "ben-balke/jojo-suitecrm",
+    "description": "SuiteCRM integration for Jojo Render",
+    "type": "library",
+    "minimum-stability": "dev",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/ben-balke/jojo-render"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "JojoSuiteCRM\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.2",
+        "ben-balke/jojo-render": "*"
     }
-  },
-  "require": {
-    "php": "^8.2",
-    "ben-balke/jojo-render": "*"
-  }
 }
