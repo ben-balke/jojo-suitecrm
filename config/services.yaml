@@ -1,14 +1,8 @@
 services:
-  _defaults:
-    autowire: true
-    autoconfigure: false
-    public: false
-
-  JojoRender\:
-    resource: '../../../../vendor/ben-balke/jojo-render/src/*'
+  JojoRender\Jojo: ~
 
   JojoSuiteCRM\EmailParser\JojoEmailParser:
-    tags:
-    - { name: email.parser }
     arguments:
       $jojo: '@JojoRender\Jojo'
+    tags:
+      - { name: email.parser }
