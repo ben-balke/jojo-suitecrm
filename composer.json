@@ -3,6 +3,7 @@
     "description": "SuiteCRM integration for Jojo Render",
     "type": "library",
     "minimum-stability": "dev",
+    "prefer-stable": true,
     "repositories": [
         {
             "type": "vcs",
@@ -16,6 +17,6 @@
     },
     "require": {
         "php": "^8.1",
-        "ben-balke/jojo-render": "*"
+        "ben-balke/jojo-render": "dev-main"
     }
 }
