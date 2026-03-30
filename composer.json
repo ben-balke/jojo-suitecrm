@@ -10,6 +10,14 @@
             "url": "https://github.com/ben-balke/jojo-render"
         }
     ],
+    "scripts": {
+        "post-install-cmd": [
+            "@php bin/install-extension.php"
+        ],
+        "post-update-cmd": [
+            "@php bin/install-extension.php"
+        ]
+    },
     "autoload": {
         "psr-4": {
             "JojoSuiteCRM\\": "src/"
